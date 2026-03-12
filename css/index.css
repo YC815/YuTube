@@ -280,6 +280,35 @@ hr {
 #nav-bar #nav-container #toggle-nav:hover {
   color: #000;
 }
+#logo-anim {
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.logo-shun {
+  display: inline-block;
+  max-width: 0;
+  opacity: 0;
+  transform: translateX(-10px);
+  -webkit-transition: all all ease-in-out;
+  -moz-transition: all all ease-in-out;
+  transition: all all ease-in-out;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+.logo-shun.shun-visible {
+  max-width: 60px;
+  opacity: 1;
+  transform: translateX(0);
+}
+.logo-yu,
+.logo-tube {
+  display: inline-block;
+  -webkit-transition: transform all ease-in-out;
+  -moz-transition: transform all ease-in-out;
+  transition: transform all ease-in-out;
+}
 @media screen and (max-width: 768px) {
   #nav-bar #nav-container ul {
     padding: 2px 8px;
